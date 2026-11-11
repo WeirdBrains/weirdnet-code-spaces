@@ -10,4 +10,8 @@ each input (`golden/*.err` when it rejects the input). The pure-Rust path
 
 CPython is used only to make the goldens, never in builds or at runtime:
 
-    scripts/py-golden.sh   # (repository root) builds the reference rythonc under target/, rewrites golden/
+    scripts/py-golden.sh   # from the repository root: builds the reference rythonc (into
+                           # $CARGO_TARGET_DIR or target/) and rewrites golden/
+
+The script is in the git repository, not in the published crate. Check the result with
+`git diff tests/python/golden` (no diff means the goldens are unchanged) and `cargo test`.
