@@ -1,0 +1,20 @@
+[package]
+name = "weirdnet-plugin"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+description = "SDK for Weirdnet code space plugins: the stable C ABI (v2), the host API, frames and result views."
+authors = ["Michael Christenson II <m3talsmith@gmail.com>"]
+license = "BSD-3-Clause"
+repository = "https://github.com/WeirdBrains/weirdnet-plugin"
+documentation = "https://docs.rs/weirdnet-plugin"
+readme = "README.md"
+keywords = ["plugin", "sdk", "ffi", "code-spaces"]
+categories = ["development-tools::ffi", "api-bindings"]
+include = ["src/**", "README.md", "LICENSE"]
+
+# No dependencies on purpose: code spaces build offline and fast, and the ABI stays
+# plain `extern "C"` with UTF-8 JSON messages.
+[dependencies]
+
+[workspace]
