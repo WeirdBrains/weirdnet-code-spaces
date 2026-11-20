@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.99"
 description = "Weirdnet code spaces: math, Polars, Rust and typed Python sources compiled into plugins against the weirdnet-plugin SDK, content-addressed builds, ABI-checked loading, trust hashes and space line-ups, under an application profile."
-authors = ["m3talsmith <m3talsmith@gmail.com>"]
+authors = ["Weird Brains LLC"]
 # The crate is BSD-3-Clause; src/python_ast is python-ast 1.1.0 (Apache-2.0), see
 # src/python_ast/VENDORED.md and src/python_ast/LICENSE-APACHE.
 license = "BSD-3-Clause AND Apache-2.0"
