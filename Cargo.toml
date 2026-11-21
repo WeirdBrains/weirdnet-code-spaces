@@ -1,6 +1,6 @@
 [package]
 name = "weirdnet-code-spaces"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 rust-version = "1.99"
 description = "Weirdnet code spaces: math, Polars, Rust and typed Python sources compiled into plugins against the weirdnet-plugin SDK, content-addressed builds, ABI-checked loading, trust hashes and space line-ups, under an application profile."

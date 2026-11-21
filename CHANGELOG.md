@@ -6,6 +6,12 @@ All notable changes to weirdnet-code-spaces are listed here. The format follows
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-11-21
+
+### Changed
+
+- Bundles the weirdnet-plugin 0.1.1 SDK: generated plugins report SDK version 0.1.1, and `WEIRDNET.sdk_version` is 0.1.1. Plugins cached for the 0.1.0 SDK are rebuilt once.
+
 ## [0.1.1] - 2026-11-21
 
 ### Changed
