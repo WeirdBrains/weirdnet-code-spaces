@@ -250,7 +250,7 @@ mod macro_tests {
         let i = weirdnet_plugin_info();
         // SAFETY: the info string is static UTF-8
         let s = unsafe { std::str::from_utf8(std::slice::from_raw_parts(i.ptr, i.len)).unwrap() };
-        assert_eq!(s, r#"{"sdk":"0.1.0","lang":"rust","kind":"ingest-connector"}"#);
-        assert_eq!(crate::SDK_VERSION, "0.1.0");
+        assert_eq!(s, r#"{"sdk":"0.1.1","lang":"rust","kind":"ingest-connector"}"#);
+        assert_eq!(crate::SDK_VERSION, "0.1.1");
     }
 }

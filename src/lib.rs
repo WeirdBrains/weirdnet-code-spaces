@@ -102,7 +102,7 @@ pub const WEIRDNET: Profile = Profile {
     app: "Weirdnet",
     sdk_package: "weirdnet-plugin",
     sdk_crate: "weirdnet_plugin",
-    sdk_version: "0.1.0",
+    sdk_version: "0.1.1",
     sdk_files: WEIRDNET_SDK_FILES,
     abi_version: abi::ABI_VERSION,
     symbols: ["weirdnet_plugin_abi", "weirdnet_plugin_info", "weirdnet_plugin_run"],

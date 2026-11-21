@@ -9,7 +9,7 @@
 //! | symbol | signature | meaning |
 //! |--------|-----------|---------|
 //! | `weirdnet_plugin_abi` | `extern "C" fn() -> u32` | the ABI version it was built for ([`ABI_VERSION`]) |
-//! | `weirdnet_plugin_info` | `extern "C" fn() -> WnStr` | static UTF-8 JSON: `{"sdk": "0.1.0", "lang": "rust"}` (and `"kind"` from `plugin!(run, kind = "…")`) |
+//! | `weirdnet_plugin_info` | `extern "C" fn() -> WnStr` | static UTF-8 JSON: `{"sdk": "0.1.1", "lang": "rust"}` (and `"kind"` from `plugin!(run, kind = "…")`) |
 //! | `weirdnet_plugin_run` | `unsafe extern "C" fn(*const WnHost) -> i32` | run once; [`RUN_OK`] or an error code |
 //!
 //! Everything else goes through the host table [`WnHost`]: `call(ctx, method, request, out)`

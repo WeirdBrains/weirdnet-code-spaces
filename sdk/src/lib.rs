@@ -528,13 +528,13 @@ macro_rules! plugin {
         $crate::plugin!($run, "rust");
     };
     ($run:path, kind = $kind:literal) => {
-        $crate::plugin!(@export $run, concat!("{\"sdk\":\"0.1.0\",\"lang\":\"rust\",\"kind\":\"", $kind, "\"}"));
+        $crate::plugin!(@export $run, concat!("{\"sdk\":\"0.1.1\",\"lang\":\"rust\",\"kind\":\"", $kind, "\"}"));
     };
     ($run:path, $lang:literal, kind = $kind:literal) => {
-        $crate::plugin!(@export $run, concat!("{\"sdk\":\"0.1.0\",\"lang\":\"", $lang, "\",\"kind\":\"", $kind, "\"}"));
+        $crate::plugin!(@export $run, concat!("{\"sdk\":\"0.1.1\",\"lang\":\"", $lang, "\",\"kind\":\"", $kind, "\"}"));
     };
     ($run:path, $lang:literal) => {
-        $crate::plugin!(@export $run, concat!("{\"sdk\":\"0.1.0\",\"lang\":\"", $lang, "\"}"));
+        $crate::plugin!(@export $run, concat!("{\"sdk\":\"0.1.1\",\"lang\":\"", $lang, "\"}"));
     };
     (@export $run:path, $info:expr) => {
         #[no_mangle]
